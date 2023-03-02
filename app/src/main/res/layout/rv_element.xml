@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="120dp"
+    android:layout_height="150dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginRight="4dp"
+    android:backgroundTint="@color/cardview_blue"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/rvDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="casual"
+            android:gravity="center|center_horizontal"
+            android:text="12:15"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/rvIconImageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintEnd_toEndOf="@+id/rvConditionTextView"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintStart_toStartOf="@+id/rvConditionTextView"
+            app:layout_constraintTop_toBottomOf="@+id/rvConditionTextView"
+            app:srcCompat="@drawable/sky" />
+
+        <TextView
+            android:id="@+id/rvTempTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="-10°C"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/rvIconImageView"
+            app:layout_constraintStart_toStartOf="@+id/rvIconImageView"
+            app:layout_constraintTop_toBottomOf="@+id/rvIconImageView" />
+
+        <TextView
+            android:id="@+id/rvConditionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginTop="1dp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="Rainy"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/rvDateTextView"
+            app:layout_constraintStart_toStartOf="@+id/rvDateTextView"
+            app:layout_constraintTop_toBottomOf="@+id/rvDateTextView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
